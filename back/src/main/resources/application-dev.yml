@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  properties: spring.datasource.url=jdbc:hsqldb:hsql://localhost/testdb
+  jpa:
+    database: HSQL
+    generate-ddl: true
+
+  hibernate:
+    ddl-auto: update
+    naming: physical-strategy:org.hibernate.boot.model.naming.PhysicalNaming
+  show-sql: true
